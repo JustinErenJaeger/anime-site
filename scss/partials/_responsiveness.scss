@@ -1,0 +1,91 @@
+@media only screen and (max-width: 426px){
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.198), rgba(0, 0, 0, 0.692)), url(../images/header-image-mobile.jpg);
+        background-size: 100% 50rem;
+        background-attachment: fixed;
+        height: 100vh;
+        position: relative;
+    
+        .top-bar {
+            width: 100%;
+            height: 3rem;
+            background: rgb(255, 255, 255)
+        }
+    
+        nav {
+            width: 100%;
+            height: 3rem;
+    
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                float: none;
+                transform: skew(0);
+                box-shadow: none;
+    
+                li {
+                    transform: skew(0);
+    
+                    a {
+                        font-family: "Dosis";
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                        display: block;
+                        padding: 0.9rem 0;
+                        text-decoration: none;
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: padding 0.2s ease-in-out, background 0.1s ease-in-out;
+                    }
+    
+                    a:hover {
+                        color: rgb(0, 98, 255);
+                        background: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    
+        .main-title {
+            width: 100%;
+            top: 50%;
+    
+            h1 {
+                font-size: 3rem;
+                color: rgb(255, 255, 255);
+                margin: 0 auto;
+            }
+    
+            p {
+                font-size: 1.2rem;
+                margin: 1rem auto;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .wrapper {
+        width: calc(100% - 2rem);
+    
+        .top-featured {
+            grid-gap: 2rem;
+            grid-template-columns: 1fr;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        
+            .top {
+        
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(10, 1fr);
+                    grid-template-rows: repeat(5, 1fr);
+                }
+            }
+        }
+    }
+}

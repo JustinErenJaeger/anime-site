@@ -1,0 +1,279 @@
+.top-featured {
+
+    .top {
+
+        .imgBox {
+            position: absolute;
+            height: 14rem;
+            width: 100%;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transform: scale(1);
+                transition: all 2s ease-in-out;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+    
+            .top-series-title {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(54, 54, 54);
+                opacity: 0;
+                z-index: 2;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .grid {
+            opacity: 0;
+            transition: all 2s ease-in-out;
+            position: relative;
+            z-index: 2;
+    
+            .square {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                background: rgb(0, 119, 255);
+                transition: all 0.6s ease-in-out;
+            }
+            
+            .square:nth-child(10) {
+                transition: all 0.5s ease-in-out 0.84s;
+            }
+            
+            .square:nth-child(9),
+            .square:nth-child(20) {
+                transition: all 0.5s ease-in-out 0.78s;
+            }
+            
+            .square:nth-child(8),
+            .square:nth-child(19),
+            .square:nth-child(30) {
+                transition: all 0.5s ease-in-out 0.72s;
+            }
+            
+            .square:nth-child(7),
+            .square:nth-child(18),
+            .square:nth-child(29),
+            .square:nth-child(40) {
+                transition: all 0.5s ease-in-out 0.66s;
+            }
+            
+            .square:nth-child(6),
+            .square:nth-child(17),
+            .square:nth-child(28),
+            .square:nth-child(39),
+            .square:nth-child(50) {
+                transition: all 0.5s ease-in-out 0.6s;
+            }
+            
+            .square:nth-child(5),
+            .square:nth-child(16),
+            .square:nth-child(27),
+            .square:nth-child(38),
+            .square:nth-child(49) {
+                transition: all 0.5s ease-in-out 0.54s;
+            }
+            
+            .square:nth-child(4),
+            .square:nth-child(15),
+            .square:nth-child(26),
+            .square:nth-child(37),
+            .square:nth-child(48) {
+                transition: all 0.5s ease-in-out 0.48s;
+            }
+            
+            .square:nth-child(3),
+            .square:nth-child(14),
+            .square:nth-child(25),
+            .square:nth-child(36),
+            .square:nth-child(47) {
+                transition: all 0.5s ease-in-out 0.42s;
+            }
+            
+            .square:nth-child(2),
+            .square:nth-child(13),
+            .square:nth-child(24),
+            .square:nth-child(35),
+            .square:nth-child(46) {
+                transition: all 0.5s ease-in-out 0.36s;
+            }
+            
+            .square:nth-child(1),
+            .square:nth-child(12),
+            .square:nth-child(23),
+            .square:nth-child(34),
+            .square:nth-child(45) {
+                transition: all 0.5s ease-in-out 0.3s;
+            }
+            
+            .square:nth-child(11),
+            .square:nth-child(22),
+            .square:nth-child(33),
+            .square:nth-child(44) {
+                transition: all 0.5s ease-in-out 0.24s;
+            }
+            
+            .square:nth-child(21),
+            .square:nth-child(32),
+            .square:nth-child(43) {
+                transition: all 0.5s ease-in-out 0.18s;
+            }
+            
+            .square:nth-child(31),
+            .square:nth-child(42) {
+                transition: all 0.5s ease-in-out 0.12s;
+            }
+            
+            .square:nth-child(41) {
+                transition: all 0.5s ease-in-out 0.06s;
+            }
+        }
+    }
+
+    .top:hover img {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+
+    .top:hover .top-series-title {
+        opacity: 1;
+        transition: all 0.5s ease-in-out 0.1s;
+    }
+
+    .top:hover .grid {
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .top:hover .square:nth-child(10) {
+        transition: all 0.5s ease-in-out;
+        transform: rotateY(180deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(9),
+    .top:hover .square:nth-child(20) {
+        transition: all 0.5s ease-in-out 0.06s;
+        transform: rotateY(180deg)  rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(8),
+    .top:hover .square:nth-child(19),
+    .top:hover .square:nth-child(30) {
+        transition: all 0.5s ease-in-out 0.12s;
+        transform: rotateY(180deg)  rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(7),
+    .top:hover .square:nth-child(18),
+    .top:hover .square:nth-child(29),
+    .top:hover .square:nth-child(40) {
+        transition: all 0.5s ease-in-out 0.18s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(6),
+    .top:hover .square:nth-child(17),
+    .top:hover .square:nth-child(28),
+    .top:hover .square:nth-child(39),
+    .top:hover .square:nth-child(50) {
+        transition: all 0.5s ease-in-out 0.24s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(5),
+    .top:hover .square:nth-child(16),
+    .top:hover .square:nth-child(27),
+    .top:hover .square:nth-child(38),
+    .top:hover .square:nth-child(49) {
+        transition: all 0.5s ease-in-out 0.3s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(4),
+    .top:hover .square:nth-child(15),
+    .top:hover .square:nth-child(26),
+    .top:hover .square:nth-child(37),
+    .top:hover .square:nth-child(48) {
+        transition: all 0.5s ease-in-out 0.36s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(3),
+    .top:hover .square:nth-child(14),
+    .top:hover .square:nth-child(25),
+    .top:hover .square:nth-child(36),
+    .top:hover .square:nth-child(47) {
+        transition: all 0.5s ease-in-out 0.42s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(2),
+    .top:hover .square:nth-child(13),
+    .top:hover .square:nth-child(24),
+    .top:hover .square:nth-child(35),
+    .top:hover .square:nth-child(46) {
+        transition: all 0.5s ease-in-out 0.48s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(1),
+    .top:hover .square:nth-child(12),
+    .top:hover .square:nth-child(23),
+    .top:hover .square:nth-child(34),
+    .top:hover .square:nth-child(45) {
+        transition: all 0.5s ease-in-out 0.54s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(11),
+    .top:hover .square:nth-child(22),
+    .top:hover .square:nth-child(33),
+    .top:hover .square:nth-child(44) {
+        transition: all 0.5s ease-in-out 0.6s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(21),
+    .top:hover .square:nth-child(32),
+    .top:hover .square:nth-child(43) {
+        transition: all 0.5s ease-in-out 0.66s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(31),
+    .top:hover .square:nth-child(42) {
+        transition: all 0.5s ease-in-out 0.72s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+    
+    .top:hover .square:nth-child(41) {
+        transition: all 0.5s ease-in-out 0.78s;
+        transform: rotateY(90deg) rotateX(45deg);
+        opacity: 0;
+    }
+}
