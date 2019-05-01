@@ -1,0 +1,419 @@
+@media only screen and (max-width: 769px){
+    header {
+    
+        .top-bar {
+            height: 64px;
+            display: none;
+    
+            .slogan {
+    
+                span {
+                    font-size: 2rem;
+                }
+            }
+    
+            img {
+                right: 2rem;
+                top: 0.6rem;
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+        }
+    
+        nav {
+            width: 40rem;
+            height: 3rem;
+            top: 64px;
+            display: none;
+        }
+
+        .mobile-nav-topbar {
+            display: initial;
+        }
+    
+        .main-title {
+            width: 40rem;
+            top: 40%;
+    
+            h1 {
+                font-size: 4rem;
+            }
+    
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    @keyframes slideshow {
+        0% {
+            background: linear-gradient(rgba(0, 0, 0, 0.198), rgba(0, 0, 0, 0.692)), url(../images/header-1.jpg);
+            background-size: 100% 42rem;
+            background-attachment: fixed;
+        }
+    
+        35% {
+            background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.692)), url(../images/header-2.jpg);
+            background-size: 100% 42rem;
+            background-attachment: fixed;
+        }
+        
+        70% {
+            background: linear-gradient(rgba(0, 0, 0, 0.376), rgba(0, 0, 0, 0.692)), url(../images/header-3.png);
+            background-size: 100% 42rem;
+            background-attachment: fixed;
+        }
+    
+        100% {
+            background: linear-gradient(rgba(0, 0, 0, 0.198), rgba(0, 0, 0, 0.692)), url(../images/header-1.jpg);
+            background-size: 100% 42rem;
+            background-attachment: fixed;
+        }
+    }
+
+    // THIS IS THE STYLES FOR THE TOP REATED SERIES
+    .top-featured {
+        grid-gap: 2rem;
+
+        .top {
+
+            .imgBox {
+                height: 12rem;
+
+                .top-series-title {
+
+                    p {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        
+            .grid {
+                height: 12rem;
+            }
+
+            .description {
+                height: 16rem;
+
+                p:nth-child(1) {
+                    font-size: 1.2rem;
+                }
+
+                p:nth-child(3) {
+                    color: rgb(78, 78, 78);
+                }
+
+                p:nth-child(4) {
+                    font-size: 0.8rem;
+                }
+
+                p:nth-child(5) {
+                    font-size: 0.8rem;
+                }
+
+                a {
+                    font-size: 0.8rem;
+                    padding: 0.2rem 0.4rem;
+                }
+
+                a:hover {
+                    padding: 0.3rem 0.6rem;
+                }
+            }
+        }
+    }
+
+    // THIS IS THE STYLES FOR THE NEW SERIES
+    .new-series {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        .series-container {
+            height: 30rem;
+            margin-bottom: 2rem;
+
+            .series-image {
+                height: 16rem;
+            }
+
+            .series-info {
+                height: 14rem;
+
+                p:nth-child(1) {
+                    font-size: 1.2rem;
+                }
+
+                p:nth-child(3) {
+                    color: rgb(78, 78, 78);
+                }
+
+                p:nth-child(5) {
+                    font-size: 0.8rem;
+                }
+
+                p:nth-child(4) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .series-container:hover img {
+            transform: scale(1.2);
+            filter: contrast(1);
+        }
+    }
+
+    // THIS IS THE STYLES FOR THE ROTASARY GALLERY
+    .gallery-container {
+        perspective: 1000px;
+        height: 32rem;
+        // padding: 12rem 0 19rem 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.5)), url(../images/camera.jpg);
+        background-size: 100% 32rem;
+
+        .phone-shape {
+            position: absolute;
+            height: 18rem;
+            width: 38rem;
+            background: rgb(255, 255, 255);
+            top: 4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 1.6rem;
+            border: 0.4rem solid rgb(119, 119, 119);
+
+            .phone-background {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 32rem;
+                height: 17rem;
+                background: rgb(0, 0, 0);
+            }
+
+            .phone-name {
+                position: absolute;
+                transform: rotateZ(-90deg) translateY(-50%);
+                left: 0;
+                top: 45%;
+                font-size: 1.3rem;
+                font-family: "Dosis";
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: rgb(116, 116, 116);
+            }
+        }
+
+        .prev,
+        .next {
+            width: 1.4rem;
+            height: 1.4rem;
+            position: absolute;
+            top: 14rem;
+            padding: 0.2rem;
+            border-radius: 50%;
+            background: rgb(22, 22, 22);
+            transition: all 0.1s ease-in-out;
+            z-index: 5;
+            border: 0.4rem solid rgb(0, 98, 255);
+            animation: pulse 0s ease infinite;
+        }
+
+        .prev {
+            left: 16.4rem;
+            transform: translate(-50%, -50%);
+        }
+
+        .next {
+            right: 16.4rem;
+            transform: translate(50%, -50%);
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: rgb(0, 98, 255);
+            border: 0.4rem solid rgb(44, 44, 44);
+        }
+
+        .perspective-holder {
+            transform-style: preserve-3d;
+            height: 8rem;
+            width: 60rem;
+            margin: 10.4rem auto 0 auto;
+            position: relative;
+            transition: all 0.6s ease-in-out;
+
+            .block {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+
+                .imgHolder-1,
+                .imgHolder-2 {
+                    position: absolute;
+                    top: 0;
+                    width: 13rem;
+                    background: rgb(34, 34, 34);
+                    height: 100%;
+                    overflow: hidden;
+                    backface-visibility: hidden;
+                    border-radius: 0.2rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: -100%;
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.4s ease-in-out;
+                        z-index: 6;
+                        background: rgba(0, 0, 0, 0.87);
+
+                        p {
+                            font-size: 1.6rem;
+                            color: rgb(255, 255, 255);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 100%;
+                            text-align: center;
+                            transform: translate(-50%, -50%);
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .imgHolder-1 {
+                    transform: rotateY(-90deg);
+                    left: -3rem;
+                }
+
+                .imgHolder-2 {
+                    right: -3rem;
+                    transform: rotateY(90deg);
+                }
+
+                .imgHolder-1:hover span,
+                .imgHolder-2:hover span{
+                    top: 0;
+                }
+
+                .preview-1,
+                .preview-2 {
+                    bottom: -6.4rem;
+                    width: 8rem;
+                    height: 4rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        filter: grayscale(0.3);
+                    }
+
+                    .options {
+                        position: absolute;
+                        bottom: -100%;
+                        left: 0;
+                        right: 0;
+                        background: rgba(0, 0, 0, 0.87);
+                        height: 100%;
+                        transition: all 0.5s ease-in-out;
+
+                        a {
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            left: 2rem;
+                            font-family: "Poiret One";
+                            font-size: 0.8rem;
+                            color: rgb(255, 255, 255);
+                            background: rgb(0, 98, 255);
+                            padding: 0.1rem 0.4rem;
+                            border-radius: 0.2rem;
+                        }
+
+                        a:hover {
+                            background: rgb(82, 149, 255);
+                        }
+
+                        .zoomBtn {
+                            position: absolute;
+                            width: 1.4rem;
+                            height: 1.4rem;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            right: 1.5rem;
+
+                            span {
+                                position: absolute;
+                                height: 0.4rem;
+                                width: 0.4rem;
+                                transition: all 0.2s ease-in-out;
+                            }
+
+                            span:nth-child(1){
+                                bottom: -2px;
+                                left: -2px;
+                                border-left: 2px solid rgb(255, 255, 255);
+                                border-bottom: 2px solid rgb(255, 255, 255);
+                            }
+
+                            span:nth-child(2){
+                                top: -2px;
+                                right: -2px;
+                                border-right: 2px solid rgb(255, 255, 255);
+                                border-top: 2px solid rgb(255, 255, 255);
+                            }
+                        }
+
+                        .zoomBtn:hover span {
+                            height: 50%;
+                            width: 50%;
+                        }
+                    }
+                }
+
+                .preview-1 {
+                    transform: rotateY(-90deg) rotateX(30deg);
+                    left: 1rem;
+                }
+
+                .preview-2 {
+                    transform: rotateY(90deg) rotateX(30deg);
+                    right: 1rem;
+                }
+            }
+
+            .block:nth-child(2) {
+                transform: rotateY(30deg);
+            }
+
+            .block:nth-child(3) {
+                transform: rotateY(60deg);
+            }
+
+            .block:nth-child(4) {
+                transform: rotateY(90deg);
+            }
+
+            .block:nth-child(5) {
+                transform: rotateY(120deg);
+            }
+
+            .block:nth-child(6) {
+                transform: rotateY(150deg);
+            }
+        }
+    }
+}

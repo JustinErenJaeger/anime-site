@@ -10,32 +10,34 @@ header {
     }
 }
 
-.wrapper {
+body {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.top-featured {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 6rem;
+    margin-bottom: 6rem;
     width: calc(100% - 10rem);
     margin: auto;
 
-    .top-featured {
-        display: grid;
-        grid-gap: 4rem;
-        grid-template-columns: repeat(3, 1fr);
-        padding-top: 6rem;
-        margin-bottom: 6rem;
-    
-        .top {
-    
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(10, 1fr);
-                grid-template-rows: repeat(5, 1fr);
-            }
+    .top {
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(5, 1fr);
         }
     }
+}
 
-    .new-series {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-    }
+.new-series {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: calc(100% - 10rem);
+    margin: auto;
 }
