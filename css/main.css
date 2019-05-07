@@ -392,10 +392,10 @@ header {
     border: 0.8rem solid #0062ff;
     animation: pulse 0s ease infinite; }
   .gallery-container .prev {
-    left: 28rem;
+    left: 25rem;
     transform: translate(-50%, -50%); }
   .gallery-container .next {
-    right: 28rem;
+    right: 25rem;
     transform: translate(50%, -50%); }
   .gallery-container .prev:hover,
   .gallery-container .next:hover {
@@ -615,8 +615,9 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background: #0077ff;
-    transition: all 0.6s ease-in-out; }
+    transition: all 0.6s ease-in-out;
+    transform-origin: left;
+    background: #0062ff; }
   .top-featured .top .grid .square:nth-child(10) {
     transition: all 0.5s ease-in-out 0.84s; }
   .top-featured .top .grid .square:nth-child(9),
@@ -692,18 +693,18 @@ body {
   transition: all 0.3s ease-in-out; }
 .top-featured .top:hover .square:nth-child(10) {
   transition: all 0.5s ease-in-out;
-  transform: rotateY(180deg) rotateX(45deg);
+  transform: rotateY(90deg) rotateX(45deg);
   opacity: 0; }
 .top-featured .top:hover .square:nth-child(9),
 .top-featured .top:hover .square:nth-child(20) {
   transition: all 0.5s ease-in-out 0.06s;
-  transform: rotateY(180deg) rotateX(45deg);
+  transform: rotateY(90deg) rotateX(45deg);
   opacity: 0; }
 .top-featured .top:hover .square:nth-child(8),
 .top-featured .top:hover .square:nth-child(19),
 .top-featured .top:hover .square:nth-child(30) {
   transition: all 0.5s ease-in-out 0.12s;
-  transform: rotateY(180deg) rotateX(45deg);
+  transform: rotateY(90deg) rotateX(45deg);
   opacity: 0; }
 .top-featured .top:hover .square:nth-child(7),
 .top-featured .top:hover .square:nth-child(18),
@@ -783,6 +784,11 @@ body {
   transform: rotateY(90deg) rotateX(45deg);
   opacity: 0; }
 
+@media only screen and (max-width: 1441px) {
+  .gallery-container .prev {
+    left: 28rem; }
+  .gallery-container .next {
+    right: 28rem; } }
 @media only screen and (max-width: 1025px) {
   header .top-bar {
     height: 64px;
